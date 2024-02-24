@@ -7,4 +7,5 @@ class CustomerAdmin(admin.ModelAdmin):
     """
     Отображает покупателей в админке
     """
-    list_display = ['lead']
+
+    list_display = ["lead"]

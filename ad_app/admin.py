@@ -7,5 +7,6 @@ class AdAdmin(admin.ModelAdmin):
     """
     Отображает продукт в админке
     """
-    list_display = ['name', 'budget']
-    list_display_links = ['name']
+
+    list_display = ["name", "budget"]
+    list_display_links = ["name"]

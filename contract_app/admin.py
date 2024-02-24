@@ -7,5 +7,6 @@ class ContractAdmin(admin.ModelAdmin):
     """
     Отображает контракт в админке
     """
-    list_display = ['name', 'start_date', 'end_date', 'cost']
-    list_display_links = ['name']
+
+    list_display = ["name", "start_date", "end_date", "cost"]
+    list_display_links = ["name"]

@@ -12,4 +12,4 @@ class BaseView(View):
         :param request:
         :return: base template
         """
-        return render(request, '_base.html')
+        return render(request, "_base.html")

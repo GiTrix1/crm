@@ -6,13 +6,14 @@ def path(instance: "Contract", filename):
     """
     Возвращает путь с именем файла
     """
-    return f'{instance.name}/{filename}'
+    return f"{instance.name}/{filename}"
 
 
 class Contract(models.Model):
     """
     Поля для контракта
     """
+
     name = models.CharField(max_length=50)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     start_date = models.DateField()

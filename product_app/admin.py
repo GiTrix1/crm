@@ -7,5 +7,6 @@ class ProductAdmin(admin.ModelAdmin):
     """
     Отображает услуги в админке
     """
-    list_display = ['name', 'description', 'cost']
-    list_display_links = ['name']
+
+    list_display = ["name", "description", "cost"]
+    list_display_links = ["name"]

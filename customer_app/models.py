@@ -7,6 +7,7 @@ class Customer(models.Model):
     """
     Поля для покупателя
     """
+
     lead = models.ForeignKey(Lead, on_delete=models.CASCADE)
     contract = models.ForeignKey(Contract, on_delete=models.CASCADE)
 

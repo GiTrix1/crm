@@ -10,20 +10,34 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('product_app', '0001_initial'),
+        ("product_app", "0001_initial"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Contract',
+            name="Contract",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=50)),
-                ('start_date', models.DateField()),
-                ('end_date', models.DateField()),
-                ('cost', models.IntegerField()),
-                ('documents', models.FileField(upload_to=contract_app.models.path)),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='product_app.product')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=50)),
+                ("start_date", models.DateField()),
+                ("end_date", models.DateField()),
+                ("cost", models.IntegerField()),
+                ("documents", models.FileField(upload_to=contract_app.models.path)),
+                (
+                    "product",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to="product_app.product",
+                    ),
+                ),
             ],
         ),
     ]
